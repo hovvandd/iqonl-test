@@ -1,0 +1,249 @@
+body{
+	width: 97%;
+	margin: 0px auto;
+}
+/*шапка сайта*/
+.head{
+	display: flex;
+	justify-content: space-between;
+}
+.logo{
+	margin-top: 20px;
+	width: 300px;
+}
+.fone{
+	font-size: 30px;
+	margin-right: 20px;
+}
+.fone p{
+	color: #ee6735ff;
+}
+/*меню*/
+#navbar {
+	background-color: #231f20ff;
+	list-style-type: none;
+	height: 60px;
+	text-align: center;
+	display: flex;
+}
+#navbar a{
+	text-decoration: none;
+	color: #c9c7c8ff;
+	line-height: 60px;
+}
+#navbar li{
+	font-size: 25px;
+	border-right: 4px solid #cf4916ff;
+	flex-grow: 1;
+}
+#navbar li:last-child{
+	border-right:none;
+	padding-right: 30px;
+}
+#navbar li:hover{
+	background-color: #cf4916ff;
+	cursor: pointer;
+}
+/*хлебные крошки*/
+.breadCrumbs{
+	list-style-type: none;
+	display: flex;
+}
+.breadCrumbs li{
+	margin: 5px;
+	color: #000;
+}
+.breadCrumbs a{
+	color: #000;
+}
+.last a{
+	text-decoration: none;
+}
+.breadCrumbs span{
+	margin: 5px;
+}
+/*контент сайта*/
+.content{
+	height: 700px;
+}
+/*калькулятор*/
+.culc{
+	width: 870px;
+	height: 500px;
+	background-color: #f2f2f2ff;
+	margin: 40px;
+}
+.contentCulc{
+	display: flex;
+}
+.position{
+	flex:50%;
+}
+.valueCulc{
+	text-align: right;
+}
+.valueCulc h1{
+	color: #cf4916ff;
+	text-align: right;
+	font-size: 40px;
+	margin-right: 50px;
+}
+.valueCulc p{
+	font-size: 20px;
+}
+.valueCulc input{
+	width: 100px;
+	margin: 10px;
+	margin-left: 50px;
+	height: 17px;
+	text-align: center;
+}
+.dateReg:hover{
+	cursor: pointer;
+}
+.depositRep{
+	width: 30px !important;
+	margin: 0px !important;
+	margin-left: 25px !important;
+}
+.no{
+	pointer-events: none;
+}
+.valueCulc select{
+	width: 106px;
+	margin: 10px;
+	margin-left: 10px;
+	margin-left: 50px;
+	height: 22px;
+}
+/*бегунки*/
+.slide{
+	width: 320px;
+	height: 10px;
+	margin-left: 15px; 
+    border-radius: 30px;
+    /*-moz-appearance: none;
+	overflow: hidden;*/
+	border: 5px solid black;
+	background-color: #000;
+}
+
+/* С начала сделал сам, потом подключил библиотеку, код рабочий
+.slide::-moz-range-thumb {  ползунок в Firefox 
+	height: 15px;
+	width: 15px;
+	border-radius: 10px;
+	-moz-appearance: none;
+	background: #fff;
+	box-shadow:
+	-13px 0 #87ac36ff, -26px 0 #87ac36ff, -39px 0 #87ac36ff,
+	-52px 0 #87ac36ff, -65px 0 #87ac36ff, -78px 0 #87ac36ff,
+	-91px 0 #87ac36ff, -104px 0 #87ac36ff, -117px 0 #87ac36ff,
+	-130px 0 #87ac36ff, -143px 0 #87ac36ff, -156px 0 #87ac36ff,
+	-169px 0 #87ac36ff, -182px 0 #87ac36ff, -195px 0 #87ac36ff,
+	-208px 0 #87ac36ff, -221px 0 #87ac36ff, -234px 0 #87ac36ff,
+	-247px 0 #87ac36ff, -260px 0 #87ac36ff,-273px 0 #87ac36ff, 
+	-286px 0 #87ac36ff,-299px 0 #87ac36ff,-312px 0 #87ac36ff,
+	-325px 0 #87ac36ff,-338px 0 #87ac36ff,-352px 0 #87ac36ff,-365px 0 #87ac36ff;
+}
+.slide::-webkit-slider-thumb { ползунок в Хроме 
+	height: 15px;
+	width: 15px;
+	border-radius: 10px;
+	-webkit-appearance: none;
+	background: #fff;
+	box-shadow:
+	-13px 0 #87ac36ff, -26px 0 #87ac36ff, -39px 0 #87ac36ff,
+	-52px 0 #87ac36ff, -65px 0 #87ac36ff, -78px 0 #87ac36ff,
+	-91px 0 #87ac36ff, -104px 0 #87ac36ff, -117px 0 #87ac36ff,
+	-130px 0 #87ac36ff, -143px 0 #87ac36ff, -156px 0 #87ac36ff,
+	-169px 0 #87ac36ff, -182px 0 #87ac36ff, -195px 0 #87ac36ff,
+	-208px 0 #87ac36ff, -221px 0 #87ac36ff, -234px 0 #87ac36ff,
+	-247px 0 #87ac36ff, -260px 0 #87ac36ff,-273px 0 #87ac36ff, 
+	-286px 0 #87ac36ff,-299px 0 #87ac36ff,-312px 0 #87ac36ff,
+	-325px 0 #87ac36ff,-338px 0 #87ac36ff,-352px 0 #87ac36ff,-365px 0 #87ac36ff;
+}
+.slide::-ms-thumb{  ползунок в IE 
+	height: 15px;
+	width: 15px;
+	border-radius: 10px;
+	-webkit-appearance: none;
+	background: #fff;
+	box-shadow:
+	-13px 0 #87ac36ff, -26px 0 #87ac36ff, -39px 0 #87ac36ff,
+	-52px 0 #87ac36ff, -65px 0 #87ac36ff, -78px 0 #87ac36ff,
+	-91px 0 #87ac36ff, -104px 0 #87ac36ff, -117px 0 #87ac36ff,
+	-130px 0 #87ac36ff, -143px 0 #87ac36ff, -156px 0 #87ac36ff,
+	-169px 0 #87ac36ff, -182px 0 #87ac36ff, -195px 0 #87ac36ff,
+	-208px 0 #87ac36ff, -221px 0 #87ac36ff, -234px 0 #87ac36ff,
+	-247px 0 #87ac36ff, -260px 0 #87ac36ff,-273px 0 #87ac36ff, 
+	-286px 0 #87ac36ff,-299px 0 #87ac36ff,-312px 0 #87ac36ff,
+	-325px 0 #87ac36ff,-338px 0 #87ac36ff,-352px 0 #87ac36ff,-365px 0 #87ac36ff;
+}*/
+.slide1{
+	margin-top: 175px;
+}
+.slide2{
+	margin-top: 135px;
+}
+.slideCulc p{
+	margin: 0;
+	margin-left: 15px;
+	font-style: italic;
+}
+.slideCulc span{
+	margin-left: 175px;
+}
+/*расчет стоимости*/
+.resultCulc p{
+	font-size: 20px;
+}
+.res{
+	padding: 10px;
+}
+.subResult{
+	height: 50px;
+	width: 150px;
+	font-size: 20px;
+	border-radius: 15px;
+	background-color: #91d800;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+.subResult:hover{
+	cursor: pointer;
+}
+/*убираю стрелку у суммы вклада и суммы пополнения вклада*/
+.depositAmount,.sumAmount{ 
+  -moz-appearance: textfield;
+  font-size: 15px;
+
+}
+.depositAmount,.sumAmount:-webkit-inner-spin-button { 
+  display: none;
+}
+
+/*подвал*/
+footer{
+	width: 97%;
+	position: fixed;
+	bottom: 0px;
+	background-color:  #231f20ff;
+	height: 80px;
+	z-index: 4;
+}
+#navbarFooter{
+	list-style-type: none;
+	text-align: center;
+	display: flex;
+}
+#navbarFooter li{
+	margin: 15px;
+	font-size: 20px;
+}
+#navbarFooter a{
+	color: #d1cfd0;
+}
+#navbarFooter li:hover{
+	cursor: pointer;
+}
